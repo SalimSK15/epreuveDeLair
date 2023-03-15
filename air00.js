@@ -5,22 +5,12 @@ const string_separateur = " ";
 
 //************************************ FONCTIONS
 
-//recuperer les donnees saisie
-/*
-function recupererDonneeSaisi(){
-    tabValeurs = args[2];
-
-    for(let i = 2; i < args.length; i++){
-
-    }
-}
-*/
 function ma_fonction(string_a_couper, string_separateur){
     let element = "";
     let j = 0;
     
     for(let i = 0; i <= string_a_couper.length; i++){
-        if(string_a_couper[i] === string_separateur){
+        if(string_a_couper[i] === string_separateur || i == string_a_couper.length){
             tabValeursSeparer[j] = element;
             j += 1;
             element = "";
@@ -30,10 +20,10 @@ function ma_fonction(string_a_couper, string_separateur){
 
         }
     }
-    if(tabValeursSeparer[0] == "" ){
+    if(tabValeursSeparer[0] == string_separateur ){
         tabValeursSeparer.shift();
     }
-    if(tabValeursSeparer[tabValeursSeparer.length-1] == ""){
+    if(tabValeursSeparer[tabValeursSeparer.length-1] == string_separateur){
         tabValeursSeparer.pop();
     }
 }
