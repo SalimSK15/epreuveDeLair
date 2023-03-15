@@ -20,7 +20,7 @@ function ma_fonction(string_a_couper, string_separateur){
     let j = 0;
     
     for(let i = 0; i <= string_a_couper.length; i++){
-        if(string_a_couper[i] === string_separateur || i == string_a_couper.length){
+        if(string_a_couper[i] === string_separateur){
             tabValeursSeparer[j] = element;
             j += 1;
             element = "";
@@ -55,8 +55,8 @@ function gestionErr(){
 //********************************** affchage;
 function affichageRes(tabValeursSeparer){
     for(let i = 0; i < tabValeursSeparer.length; i++)
-        console.log(tabValeursSeparer[i]);
-        
+        if(tabValeursSeparer[i] != "")
+            console.log(tabValeursSeparer[i]);
 }
 
 //resolution
