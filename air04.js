@@ -1,6 +1,5 @@
 const args = process.argv;
 var tabValeursSaisi = args[2];
-var tabValeursSeparer = [];
 
 //************************************ FONCTIONS
 function supprimerLettreIdentique(chaine){
