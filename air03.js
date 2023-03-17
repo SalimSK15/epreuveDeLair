@@ -54,7 +54,7 @@ function affichageRes(tabValNonPaire){
         console.log("Toutes les valeurs sont paire !");
         
 }
-//resolution + 
+//*************************************resolution 
 if(gestionErrOk()){
     recuperationDonneeSaisi();
     affichageRes(valeurNonPaire(tabValeursSaisi));
