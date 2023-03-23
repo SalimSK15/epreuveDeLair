@@ -23,17 +23,13 @@ function recuperationDonneeSaisi(){
 }
 
 function ma_fonction(tabValeursSaisi, string_separateur){
-
-    console.log(string_separateur);
-    console.log(tabValeursSaisi);
-    
     
     let tabDeChaine = "";
 
     for(let i = 0; i < tabValeursSaisi.length; i++){
         tabDeChaine += tabValeursSaisi[i]+string_separateur;
         if(i+1 == tabValeursSaisi.length)
-            tabDeChaine += tabValeursSaisi[i];
+            tabDeChaine += "";
 
     }
     
